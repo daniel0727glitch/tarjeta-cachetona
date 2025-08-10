@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feliz Cumpleaños mi Cachetona</title>
+<style>
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff0f5;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.slider {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+.slider img {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    scroll-snap-align: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+.carta {
+    max-width: 600px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+button {
+    background-color: #ff4d6d;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.mini-carta {
+    display: none;
+    background: #ffe6eb;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+</style>
+</head>
+<body>
+
+<h1>Feliz Cumpleaños mi Cachetona ❤️</h1>
+
+<div class="slider">
+    <img src="foto1.jpeg" alt="Foto 1">
+    <img src="foto2.jpeg" alt="Foto 2">
+    <img src="foto3.jpeg" alt="Foto 3">
+    <img src="foto4.jpeg" alt="Foto 4">
+    <img src="foto5.jpeg" alt="Foto 5">
+    <img src="foto6.jpeg" alt="Foto 6">
+</div>
+
+<div class="carta">
+    <p>Mi cachetona, mi corazón de jamaica, mi goldita, mi niña chiquita... Hoy celebro no solo tu cumpleaños, sino también cada momento que me has regalado desde que llegaste a mi vida. Eres mi razón de sonreír, mi paz y mi locura bonita. Te amo más de lo que las palabras pueden explicar.</p>
+    <p>Gracias por existir y por ser mi todo. Te prometo que siempre estaré para ti, en cada risa, en cada lágrima y en cada sueño.</p>
+    <p><strong>De tu precioso Sergio ❤️</strong></p>
+
+    <button onclick="mostrarMiniCarta()">Toca aquí cachetona</button>
+
+    <div id="miniCarta" class="mini-carta">
+        <p>Siempre juntos, mi amor. No importa lo que pase, mi corazón siempre será tuyo y solo tuyo. Eres mi destino, mi presente y mi futuro.</p>
+        <iframe id="ytplayer" width="100%" height="200" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+</div>
+
+<script>
+function mostrarMiniCarta() {
+    document.getElementById('miniCarta').style.display = 'block';
+    document.getElementById('ytplayer').src = "https://www.youtube.com/embed/QUQhkscsQd4?autoplay=1";
+}
+</script>
+
+</body>
+</html>
